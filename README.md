@@ -15,13 +15,14 @@ requisitos tener instalado
 -Node js
 -NPM o Yarn  
 
-<h3>nota si no tienes yarn intalado sustuye por npm en los comandos</h3>
+<h3>nota si no tienes yarn intalado sustituye por npm en los comandos</h3>
 
 1- instlar Eslint en nuesto proyecto de js o instlar la extencion de VS Code
 
 -- yarn add Eslint -D
+
 -- https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint
 
 2- instlar prettier junto a la extencion de VS Code 
 
--- yarn a
+-- yarn add prettier  -D
