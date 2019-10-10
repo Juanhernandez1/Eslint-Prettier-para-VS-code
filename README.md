@@ -25,4 +25,62 @@ requisitos tener instalado
 
 2- instlar prettier junto a la extencion de VS Code 
 
--- yarn add prettier  -D
+-- yarn add prettier -D
+
+-- https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode
+
+3- abrir una terminardentro del proyecto y ejecutar el siguiente comando si se instalo eslint en el royecto 
+  
+  ./node_modules/.bin/eslint --init
+
+-- si se intalo la extencion entrar a la paleta de comando y escribir "create eslint configuration"
+
+selecionar lo siguiente 
+-- To check syntax, find problems, and enforce code style 
+selecionar el tipo de impotacion yo utiliso 
+  -- None of these
+  
+selecionar el framework que estar usando 
+--muestra React y vue y nunguno de estos 
+
+indicar si se usa typescript 
+-- si o no
+
+-- Marcar node y browser
+
+selecionar la guia de estilo
+
+-- Use a popular style guide
+
+selecionar la configuracion se puede elegir entr las siguientes 3
+Airbnb (https://github.com/airbnb/javascript) 
+Standard (https://github.com/standard/standard) 
+Google (https://github.com/google/eslint-config-google) 
+
+yo utiliso Airbnb
+
+selecionar el tipo de archivo de configuracion yo utiliso json
+
+se intlaran dependecias nesesarias y generara el archivo .eslintrc
+
+4- buscar las siguientes linas en archivo .eslintrc y cambiarlas 
+
+ "extends": ["airbnb", "prettier"],
+ 
+  "plugins": ["react", "prettier"],
+  
+  "rules": {
+    "prettier/prettier": ["error"],
+        "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+        // aca dentro puede modificar las reglas segun la documentacion de Eslint
+    }
+
+5- instlar las siguientes depencias 
+
+yarn add eslint-plugin-prettier eslint-config-prettier -D
+
+6- activar guardado automatico, formato al pegar, fromato al guardar en vs code en los ajustes 
+
+listo. 
+
+
