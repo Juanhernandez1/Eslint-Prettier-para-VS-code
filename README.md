@@ -80,6 +80,7 @@ se intlaran dependecias nesesarias y generara el archivo .eslintrc
 yarn add eslint-plugin-prettier eslint-config-prettier -D
 
 6- activar guardado automatico, formato al pegar, fromato al guardar en vs code en los ajustes 
+7- definir a prettier como formateador de codigo por defecto
 
 listo. 
 
